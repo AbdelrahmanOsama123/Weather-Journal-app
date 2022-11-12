@@ -3,7 +3,7 @@ let d = new Date();
 let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear(); /// 11 / 11 / 2022
 
 // store the api key that I got when entering my credentials to OpenWeatherMap webiste.
-let ApiKey = '7115f60ea7859e5bd6f06afecf6bbb69';
+const ApiKey = '7115f60ea7859e5bd6f06afecf6bbb69';
 
 // function perfrom action that will be implementend when clicking on generate button .
 document.getElementById('generate').addEventListener('click',performAction);
