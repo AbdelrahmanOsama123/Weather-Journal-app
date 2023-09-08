@@ -13,8 +13,8 @@ function performAction(){
     .then(function(data){
         let temp = data.main.temp;
         let feelings = document.getElementById('feelings').value;
-        const newData = {temp:temp,
-            feelings:feelings,
+        const newData = {temp,
+            feelings,
             date:newDate};
             
         postData('/post',newData);
@@ -55,9 +55,9 @@ const updateUI = async(url=" ")=>{
     const request = await fetch(url); 
     try{
         const allData = await request.json();
-        document.getElementById("date").innerHTML = "date =>"+allData[0].date;
-        document.getElementById("temp").innerHTML = "temp =>"+allData[0].temp;
-        document.getElementById("content").innerHTML ="content =>"+allData[0].feelings;
+        document.getElementById("date").innerHTML = "date =>"+allData.date;
+        document.getElementById("temp").innerHTML = "temp =>"+allData.temp;
+        document.getElementById("content").innerHTML ="content =>"+allData.feelings;
     }
     catch(error){
       console.log("error", error);
