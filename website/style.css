@@ -1,101 +1,133 @@
-.entry {
-    background: rgba(59, 74, 107, 0.4);
-    top: 600px;
-  }
-  Mohamed
-  Mohamed Amr
-  body {
-    background: #fffff8;
+body{
+    background: #f23557;
+    margin:0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-  
-  #app {
+    background-image: url("field-clouds-sky-533541-1024x685.jpg");
+}
+
+#app{
     display: grid;
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
-    height: 100vh;
-    background: #f23557;
+    height:100vh;
     color: #f0d43a;
     justify-content: center;
     grid-gap: 1em;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
-  }
-  
-  .entry {
-    background: rgba(59, 74, 107, 0.4);
-    top: 600px;
-  }
+    font-family: 'Oswald', sans-serif;
+}
 
-  
-  /*  Basic Styling To Override Default For Basic HTML Elements */
-  label {
-    display: block;
+.entry{
+    background: rgba(59, 74, 107, 0.4);
+    top:600px;
+}
+
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
     font-size: 27px;
-  }
-  
-  input {
-    display: block;
+    color : white
+}
+
+input{
+    display:block;
     height: 60px;
     width: 320px;
-    background: #22b2da;
+    background:#22b2da;
     color: #f0d43a;
     font-size: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     border: none;
-  }
-  
-  button {
+}
+
+button{
     width: 400px;
-    height: 100px;
-  
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: "Oswald", sans-serif;
-    border: none;
+    height: 80px;
+
     background: #3b4a6b;
+    color: white;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
     cursor: pointer;
-    float: right;
+    float : right;
     box-shadow: 2px 4px 5px #444;
-  }
-  button:hover {
+    background-color: rgb(35, 25, 72);
+
+}
+
+button :hover{
     transition: all 0.3s ease-in-out;
     background: #2b364e;
-  }
-  h1 {
+    
+}
+h1{
     font-size: 36px;
-  }
-  
-  textarea {
-    background: #22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    width: 50%;
-    font-family: "Oswald", sans-serif;
+    margin :80px;
+}
+.holder.headline{
+    width :100%;
     height: 50%;
-  }
-  /* Reset style for HTML element on active to have no border*/
-  input:focus,
-  select:focus,
-  textarea:focus,
-  button:focus {
+    background-color: rgb(35, 25, 72);
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+textarea{
+    background-color: rgb(35, 25, 72);
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    width :50%;
+    height :50%;
+
+}
+.title{
+    color :white;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(0, 255, 229);
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
     outline: none;
-  }
-  /* Style for Placeholder Text*/
-  ::placeholder {
-    /* Firefox, Chrome, Opera */
-    color: #f0d43a;
-    font-family: "Oswald", sans-serif;
-  }
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
   
-  :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #f0d43a;
-    font-family: "Oswald", sans-serif;
-  }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
   
-  ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #f0d43a;
-    font-family: "Oswald", sans-serif;
-  }
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+p{
+    text-align: center;
+    height:30px;
+    background: #3b4a6b;
+    color :white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
